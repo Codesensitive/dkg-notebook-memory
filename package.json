@@ -1,0 +1,12 @@
+{
+  "name": "dkg-notebook-memory",
+  "version": "0.1.0",
+  "description": "Explicitly selected Jupyter findings to private DKG v10 Working Memory with provenance and verified readback",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.13" },
+  "bin": { "dkg-notebook-memory": "bin/cli.mjs" },
+  "exports": "./src/index.mjs",
+  "files": ["src", "bin", "examples", "README.md", "LICENSE", "docs"],
+  "scripts": { "test": "node --test test/*.test.mjs", "demo": "node bin/cli.mjs plan examples/research.ipynb --project notebook-demo --source https://example.org/research/demo --agent researcher" }
+}
