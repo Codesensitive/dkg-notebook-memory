@@ -28,4 +28,4 @@ Writes across cells are not atomic. Verified content is preserved on later failu
 
 ## Maintenance
 
-Proposed maintainer: Codesensitive. The program requires at least six months of support after acceptance. That commitment has not yet been accepted by the account owner; this draft must not be submitted as if it has.
+Maintainer: [Codesensitive](https://github.com/Codesensitive). The account owner accepts responsibility for at least six months of support after program acceptance. Report bugs through this repository's GitHub issues.
