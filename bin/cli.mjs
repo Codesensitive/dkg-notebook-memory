@@ -13,7 +13,7 @@ try {
     console.log('dkg-notebook-memory plan|push notebook.ipynb --project ID --source URL --agent NAME\ndkg-notebook-memory recall ASSET --project ID\nPush/recall require DKG_TOKEN; --url defaults to http://127.0.0.1:9200.\nOnly cells with metadata.dkg.export=true are selected. Plan performs no network calls.');
   } else {
     if (!['plan', 'push', 'recall'].includes(command) || positionals.length !== 2) throw new Error('Expected plan, push, or recall with one file/asset argument');
-    const client = () => new DkgClient({ url: values.url, token: process.env.DKG_TOKEN });
+    const client = () => new DkgClient({ url: values.url ?? process.env.DKG_API_URL, token: process.env.DKG_AUTH_TOKEN ?? process.env.DKG_TOKEN });
     let result;
     if (command === 'recall') result = await recallAsset(client(), values.project, file);
     else {

@@ -59,3 +59,5 @@ The live test is skipped unless explicitly enabled. Against a running node with 
 This version retains WM drafts without sealing or sharing. It does not imply cryptographic verification, team replication or on-chain persistence. The DKG node owns authentication, storage and lifecycle authority. Remote transport, automatic notebook watching, output ingestion, and a Jupyter UI extension are outside this version.
 
 See [design and promotion path](docs/DESIGN.md) and [security](docs/SECURITY.md).
+
+Registry installation supports DKG_AUTH_TOKEN and DKG_API_URL. DKG_TOKEN remains a fallback; an explicit --url takes precedence.

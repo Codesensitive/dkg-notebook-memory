@@ -1,6 +1,6 @@
 {
   "name": "dkg-notebook-memory",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Explicitly selected Jupyter findings to private DKG v10 Working Memory with provenance and verified readback",
   "type": "module",
   "license": "MIT",
