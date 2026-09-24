@@ -1,16 +1,37 @@
 {
   "name": "dkg-notebook-memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Explicitly selected Jupyter findings to private DKG v10 Working Memory with provenance and verified readback",
   "type": "module",
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/Codesensitive/dkg-notebook-memory.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codesensitive/dkg-notebook-memory.git"
+  },
   "homepage": "https://github.com/Codesensitive/dkg-notebook-memory#readme",
-  "bugs": { "url": "https://github.com/Codesensitive/dkg-notebook-memory/issues" },
-  "publishConfig": { "access": "public" },
-  "engines": { "node": ">=22.13" },
-  "bin": { "dkg-notebook-memory": "bin/cli.mjs" },
+  "bugs": {
+    "url": "https://github.com/Codesensitive/dkg-notebook-memory/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "dkg-notebook-memory": "bin/cli.mjs"
+  },
   "exports": "./src/index.mjs",
-  "files": ["src", "bin", "examples", "README.md", "LICENSE", "docs"],
-  "scripts": { "test": "node --test test/*.test.mjs", "demo": "node bin/cli.mjs plan examples/research.ipynb --project notebook-demo --source https://example.org/research/demo --agent researcher" }
+  "files": [
+    "src",
+    "bin",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "demo": "node bin/cli.mjs plan examples/research.ipynb --project notebook-demo --source https://example.org/research/demo --agent researcher"
+  }
 }
